@@ -20,6 +20,7 @@ test.describe('Automation Practice Form', {tag: '@web-automation'}, () => {
     await automationPracticeFormPage.birthDateTextBox.fill('13 Apr 1996');
     await automationPracticeFormPage.subjectTextBox.fill('Math');
     await automationPracticeFormPage.subjectTextBox.press('Enter');
+    await automationPracticeFormPage.hobbyCheckBox.check();
     await automationPracticeFormPage.uploadPictureFileBrowser.setInputFiles(filePath);
     await automationPracticeFormPage.currentAddressTextArea.fill('Malang, Indonesia');
     await automationPracticeFormPage.selectRegion('NCR');

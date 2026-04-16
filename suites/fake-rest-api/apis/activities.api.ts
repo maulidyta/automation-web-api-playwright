@@ -10,6 +10,10 @@ class ActivitiesApi extends BaseApi {
   async getActivityById(id: number) {
     return this.get(`${baseUrl}/Activities/${id}`, {});
   }
+
+  async postActivities(data: object) {
+    return this.post(`${baseUrl}/Activities`, data);
+  }
 }
 
 export default ActivitiesApi;

@@ -1,0 +1,27 @@
+{
+  "name": "automation-web-api-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/maulidyta/automation-web-api-playwright#readme",
+  "bugs": {
+    "url": "https://github.com/maulidyta/automation-web-api-playwright/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maulidyta/automation-web-api-playwright.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "superstruct": "^2.0.2"
+  }
+}

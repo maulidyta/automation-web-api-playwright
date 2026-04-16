@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -29,6 +29,13 @@ export default defineConfig({
       testDir: 'suites/fake-rest-api/tests',
       use: {
         baseURL: process.env.FAKE_REST_API_BASE_URL,
+      }
+    },
+    {
+      name: 'Demo QA Web',
+      testDir: 'suites/demo-qa-web/tests',
+      use: {
+        baseURL: process.env.DEMO_QA_WEB_BASE_URL,
       }
     }
   ],

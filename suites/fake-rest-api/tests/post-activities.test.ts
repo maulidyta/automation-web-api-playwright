@@ -4,7 +4,7 @@ import ActivitiesApi from '../apis/activities.api.js';
 import { REQUEST_BODY_POST_ACTIVITIES } from '../data/activities.data.js';
 import { GET_ACTIVITY_BY_ID_RESPONSE } from '../schemas/activities.schema.js';
 
-test.describe('Post Activities', ()=> {
+test.describe('Post Activities', {tag: '@api-automation'}, ()=> {
   test('Successfully post activities', async ({request}) => {
     const activitiesApi = new ActivitiesApi(request);
     const postActivities = await activitiesApi.postActivities(REQUEST_BODY_POST_ACTIVITIES);

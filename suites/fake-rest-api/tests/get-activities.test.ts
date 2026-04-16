@@ -3,7 +3,7 @@ import { assert } from 'superstruct';
 import ActivitiesApi from '../apis/activities.api.js';
 import { GET_ALL_ACTIVITIES_RESPONSE, GET_ACTIVITY_BY_ID_RESPONSE } from '../schemas/activities.schema.js';
 
-test.describe('Get Activities', ()=> {
+test.describe('Get Activities', {tag: '@api-automation'}, ()=> {
   test('Successfully get all activities', async ({request}) => {
     const activitiesApi = new ActivitiesApi(request);
     const getAllActivities = await activitiesApi.getAllActivities();
